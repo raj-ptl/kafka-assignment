@@ -33,8 +33,16 @@ func main() {
 
 	err := w.WriteMessages(ctx,
 		kafka.Message{
-			Key:   []byte("dummyKey"),
-			Value: []byte("dummyValue"),
+			Key:   []byte("dummyKey1"),
+			Value: []byte("dummyValue1"),
+		},
+		kafka.Message{
+			Key:   []byte("dummyKey2"),
+			Value: []byte("dummyValue2"),
+		},
+		kafka.Message{
+			Key:   []byte("dummyKey3"),
+			Value: []byte("dummyValue3"),
 		},
 	)
 
